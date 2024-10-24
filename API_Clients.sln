@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_Clients", "API_Clients.csproj", "{9947C932-139F-416B-B703-51754B2DAD66}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_Clients", "API_Clients\API_Clients.csproj", "{9947C932-139F-416B-B703-51754B2DAD66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_Clients.Tests", "..\API_Clients.Tests\API_Clients.Tests.csproj", "{04E06084-0FE3-4C23-A9F4-832E0869BBBB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_Clients.Tests", "API_Clients.Tests\API_Clients.Tests\API_Clients.Tests.csproj", "{04E06084-0FE3-4C23-A9F4-832E0869BBBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
