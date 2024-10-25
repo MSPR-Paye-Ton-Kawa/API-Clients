@@ -1,5 +1,7 @@
 using API_Clients.Models;
 using Microsoft.EntityFrameworkCore;
+using Prometheus;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +19,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 
 var app = builder.Build();
+
+// Utiliser le middleware Prometheus
+app.UseMetricServer();  // Ajoute un endpoint pour les métriques Prometheus
+app.UseHttpMetrics();   // Collecte les métriques HTTP (requêtes, latence, etc.)
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
